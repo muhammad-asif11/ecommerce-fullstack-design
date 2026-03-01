@@ -3,16 +3,20 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --shadoWhite: #f5f5f5;
+  --Narangi: #db4444;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-shadoWhite: var(--shadoWhite);
+  --color-Narangi: var(--Narangi);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: white) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -23,4 +27,27 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-swiper .swiper-pagination-bullet {
+  background: #d1d5db; /* gray */
+  opacity: 1;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  background: var(--Narangi) !important; /* red active dot */
+}
+
+.farrow svg {
+    transform: rotate(90deg);
+}
+
+/*
+Source - https://stackoverflow.com/q/70293470
+Posted by Zack Plauché, modified by community. See post 'Timeline' for change history
+Retrieved 2026-02-20, License - CC BY-SA 4.0
+*/
+
+.Button {
+  @apply bg-Narangi py-2 px-5 text-white cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110 will-change-transform;
 }
