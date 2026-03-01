@@ -5,7 +5,7 @@ import type { LucideIcon } from "lucide-react";
 
 type Props = {
   label: string;
-  icon: string; // coming from API
+  icon: React.ReactNode; // coming from API
   active: boolean;
   onClick: () => void;
 };
