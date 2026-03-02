@@ -4,14 +4,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Icon } from "../share/Icon";
 import { slides } from "../utills/const";
+import Button from "../share/Button";
 
 const HeroCarousel = () => {
   return (
-    <div className="flex bg-black text-white p-10 rounded-md w-full">
+    <div className="w-full bg-black text-white rounded-md px-4 sm:px-6 lg:px-10 py-8">
       <Swiper
-        modules={[Pagination, Autoplay]}
+        modules={[Pagination]}
         spaceBetween={20}
         slidesPerView={1}
         loop
@@ -25,32 +25,37 @@ const HeroCarousel = () => {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className="flex items-center justify-between">
-              <div className="max-w-[400px] grid gap-2">
-                <div className="flex gap-4 place-items-center">
+            <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8">
+              <div className="w-full flex flex-col place-items-start gap-4">
+                <div className="flex items-center place-items-center gap-4">
                   <img
-                    src={slide.imag}  
+                    src={slide.imag}
                     alt="Iphone"
-                    className="w-10 object-cover"
+                    className="w-8 xl:w-10 object-cover"
                   />
-                  <p>{slide.subtitle}</p>
+                  {/* <NextImage src={slide.imag} alt="Iphone" /> */}
+                  <p className="text-sm lg:text-base text-gray-300">
+                    {slide.subtitle}
+                  </p>
                 </div>
-                <p className="text-6xl font-semibold leading-snug">
+                <p className="flex gap-1 md:flex-col xl:text-6xl sm:text-2xl text-lg md:text-2xl font-semibold leading-snug">
                   {slide.title.map((line, i) => (
                     <span key={i} className="block">
                       {line}
                     </span>
                   ))}
                 </p>
-                <button className="mt-6 underline flex gap-2 place-items-center">
-                  Shop Now
-                  <Icon name="arrow" size={24} />
-                </button>
+
+                <Button
+                  title="Shop Now"
+                  icon="rightArrow"
+                  style="mt-4 underline flex flex-row-reverse place-items-center lg:justify-start gap-2 text-sm sm:text-base"
+                />
               </div>
               <img
                 src={slide.image}
                 alt="Iphone"
-                className="w-[400px] object-cover"
+                className="w-70 lg:w-[400px] object-cover"
               />
             </div>
           </SwiperSlide>

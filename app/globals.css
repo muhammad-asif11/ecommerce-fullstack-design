@@ -49,5 +49,5 @@ Retrieved 2026-02-20, License - CC BY-SA 4.0
 */
 
 .Button {
-  @apply bg-Narangi py-2 px-5 text-white cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110 will-change-transform;
+  @apply bg-Narangi py-2 px-5 text-white text-sm sm:text-lg cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110 will-change-transform;
 }

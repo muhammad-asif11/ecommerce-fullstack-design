@@ -10,6 +10,7 @@ import { Product } from "../utills/types";
 import Timed from "../Products/Timed";
 import CarouselArrows from "../share/CarouselArrows";
 import Button from "../share/Button";
+import Heading from "../share/Heading";
 
 const ExploreProducts = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -27,8 +28,8 @@ const ExploreProducts = () => {
   return (
     <section className="flex flex-col place-items-start gap-4">
       <Timed title="Our Products" />
-      <article className="w-full flex justify-between place-items-center">
-        <h2 className="text-2xl font-semibold">Explore Our Products</h2>
+      <article className="w-full flex flex-col sm:flex-row gap-3 justify-between place-items-center">
+        <Heading title="Explore Our Products" />
         <CarouselArrows />
       </article>
       <Swiper
@@ -53,7 +54,7 @@ const ExploreProducts = () => {
         ))}
       </Swiper>
       {/* =====  color option products =====*/}
-      <div className="grid grid-cols-4 w-full gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-5">
         {colorImg.map((item) => (
           <div>
             <ProductCard {...item} />

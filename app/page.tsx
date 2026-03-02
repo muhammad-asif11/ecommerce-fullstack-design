@@ -8,7 +8,7 @@ import Products from "@/components/Products/Products";
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col gap-20 w-full px-10">
+      <main className="flex flex-col gap-10 sm:gap-20 w-full px-5 sm:px-10">
         <HeroSection />
         <Products />
         <Category />

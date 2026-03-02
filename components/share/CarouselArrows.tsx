@@ -1,14 +1,19 @@
+import Button from "./Button";
 import { Icon } from "./Icon";
 
 const CarouselArrows = () => {
   return (
-    <div className="flex justify-end gap-3">
-      <button className="prev-btn p-2 bg-shadoWhite rounded-full hover:cursor-pointer">
-        <Icon name="leftArrow" />
-      </button>
-      <button className="next-btn p-2 bg-shadoWhite rounded-full hover:cursor-pointer">
-        <Icon name="rightArrow" />
-      </button>
+    <div className="w-full flex justify-end gap-3">
+      <Button
+        title=""
+        icon="leftArrow"
+        style="prev-btn p-2 bg-shadoWhite rounded-full hover:cursor-pointer"
+      />
+      <Button
+        title=""
+        icon="rightArrow"
+        style="prev-btn p-2 bg-shadoWhite rounded-full hover:cursor-pointer"
+      />
     </div>
   );
 };

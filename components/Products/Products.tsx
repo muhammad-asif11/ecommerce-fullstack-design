@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import CarouselArrows from "../share/CarouselArrows";
 import { Product } from "../utills/types";
 import BorderLine from "../share/BorderLine";
+import Heading from "../share/Heading";
 
 const Products = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -32,9 +33,9 @@ const Products = () => {
     <section>
       <Timed title={`Today's `} />
 
-      <div className="flex justify-between place-items-center py-5">
-        <article className="flex gap-10 place-items-center">
-          <h2 className="text-3xl font-semibold">Flash Sales</h2>
+      <div className="flex justify-between flex-col gap-2 sm:flex-row place-items-center py-5">
+        <article className="w-full flex gap-5 flex-col sm:flex-row sm:gap-10 place-items-start sm:place-items-center">
+          <Heading title="Flash Sales" />
           <FlashSaleTimer />
         </article>
 

@@ -13,7 +13,7 @@ type Props = {
 const Button = ({ title, onClick, style, icon, type }: Props) => {
   return (
     <button type={type} onClick={onClick} className={style}>
-      {icon && <Icon name={icon} size={20} />}
+      {icon && <Icon name={icon} className="text-sm"/>}
       {title}
     </button>
   );

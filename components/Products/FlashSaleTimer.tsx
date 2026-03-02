@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 
 type TimeLeft = {
@@ -49,16 +48,16 @@ const FlashSaleTimer = () => {
   const format = (num: number) => String(num).padStart(2, "0");
 
   return (
-    <div className="flex items-center gap-6">
+    <div className="flex items-center gap-3 sm:gap-6">
       {[
         { label: "Days", value: timeLeft.days },
         { label: "Hours", value: timeLeft.hours },
         { label: "Minutes", value: timeLeft.minutes },
         { label: "Seconds", value: timeLeft.seconds },
       ].map((item, i) => (
-        <div key={i} className="grid place-items-center">
+        <div key={i} className="grid grid-cols-1 place-items-start">
           <span className="text-xs text-gray-500">{item.label}</span>
-          <p className="text-3xl font-bold tracking-widest">
+          <p className="text-2xl sm:text-3xl font-bold tracking-widest">
             {format(item.value)} <span className="text-Narangi">:</span>
           </p>
         </div>

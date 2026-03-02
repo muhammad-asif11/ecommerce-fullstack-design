@@ -93,7 +93,7 @@ const AuthForm: React.FC<Props> = ({ mode }) => {
 
   return (
     <div className="w-full max-w-md">
-      <h2 className="text-3xl font-semibold mb-2">
+      <h2 className="text-2xl sm:text-3xl font-semibold mb-2">
         {isLogin ? "Log in to Exclusive" : "Create an account"}
       </h2>
 

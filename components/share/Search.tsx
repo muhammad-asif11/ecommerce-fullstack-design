@@ -26,7 +26,7 @@ const SearchBar = () => {
 
   return (
     <div>
-      <div className="flex bg-shadoWhite place-items-center py-3 px-4">
+      <div className="flex bg-shadoWhite place-items-center lg:py-3 lg:px-4 p-2">
         <input
           type="search"
           placeholder="What are you looking for?"

@@ -5,12 +5,12 @@ import NextImage from "../share/NextImage";
 const Hero = () => {
   return (
     <section className="bg-black text-white px-6 lg:px-20 py-10">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 items-center gap-10">
+      <div className="w-full grid lg:grid-cols-2 items-center">
         {/* ====== LEFT CONTENT ====== */}
         <div className="flex flex-col place-items-start gap-8">
           <p className="text-green-400 text-sm font-medium">Categories</p>
 
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+          <h1 className="text-2xl lg:text-6xl md:text-5xl font-bold leading-tight">
             Enhance Your <br />
             Music Experience
           </h1>

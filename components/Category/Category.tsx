@@ -13,6 +13,7 @@ import "swiper/css/pagination";
 import { Icon } from "../share/Icon";
 import CarouselArrows from "../share/CarouselArrows";
 import BorderLine from "../share/BorderLine";
+import Heading from "../share/Heading";
 
 const Category = () => {
   const [categories, setCategories] = useState<CategoryLIST[]>([]);
@@ -31,8 +32,8 @@ const Category = () => {
     <section>
       <Timed title="Category" />
       {/* ====== Carousel Arrows ====== */}
-      <article className="flex justify-between place-items-center py-4">
-        <h2 className="text-2xl font-semibold ">Browse By Category</h2>
+      <article className="flex flex-col sm:flex-row justify-between place-items-start gap-3 sm:gap-0 sm:place-items-center py-4">
+        <Heading title="Browse By Category" />
         <CarouselArrows />
       </article>
 
@@ -66,7 +67,7 @@ const Category = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="mt-15">
+      <div className="mt-8 sm:mt-15">
         <BorderLine />
       </div>
     </section>

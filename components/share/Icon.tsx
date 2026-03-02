@@ -4,11 +4,11 @@ import { IconType } from "react-icons";
 
 type Props = {
   name: IconName;
-  size?: number;
+  // size?: number;
   className?: string;
 };
 
-export const Icon = ({ name, size = 20, className }: Props) => {
+export const Icon = ({ name, className }: Props) => {
   const Component: IconType = ICONS[name];
-  return <Component size={size} className={className} />;
+  return <Component className={className} />;
 };
