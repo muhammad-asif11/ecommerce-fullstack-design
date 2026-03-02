@@ -22,7 +22,7 @@ const CategorySidebar = () => {
             className="flex justify-between items-center cursor-pointer hover:text-black text-gray-600"
           >
             {cat}
-            {i < 2 && <Icon name="arrow" size={20} />}
+            {i < 2 && <Icon name="arrow" className="text-lg" />}
           </li>
         ))}
       </ul>

@@ -23,7 +23,7 @@ const CategoryCard = ({ label, icon, active, onClick }: Props) => {
             : "bg-white text-gray-700 hover:border-Narangi"
         }`}
     >
-      {IconComponent && <IconComponent size={28} />}
+      {IconComponent && <IconComponent />}
       <p className="text-sm font-medium">{label}</p>
     </div>
   );

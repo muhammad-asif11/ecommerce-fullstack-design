@@ -40,8 +40,8 @@ const MobileMenu = ({ isOpen, onClose }: Props) => {
       {/* Search + Icons */}
       <div className="flex items-center gap-4 pt-4">
         <SearchBar />
-        <Icon name="heart" size={22} />
-        <Icon name="cart" size={22} />
+        <Icon name="heart" className="text-xl" />
+        <Icon name="cart" className="text-xl" />
       </div>
     </div>
   );

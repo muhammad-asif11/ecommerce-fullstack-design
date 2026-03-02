@@ -43,8 +43,8 @@ const Header = () => {
         {/* Desktop Icons */}
         <div className="hidden md:flex items-center gap-4">
           <SearchBar />
-          <Icon name="heart" size={24} />
-          <Icon name="cart" size={24} />
+          <Icon name="heart" className="text-lg" />
+          <Icon name="cart" className="text-lg" />
         </div>
 
         {/* ====== Mobile Hamburger ========= */}

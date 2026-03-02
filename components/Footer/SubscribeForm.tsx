@@ -24,7 +24,7 @@ const SubscribeForm: React.FC = () => {
           className="px-4 text-white text-sm font-medium farrow"
           aria-label="Submit email"
         >
-          <Icon name="farrow" size={25} />
+          <Icon name="farrow" className="text-lg" />
         </button>
       </div>
     </form>

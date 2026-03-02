@@ -36,7 +36,7 @@ const SearchBar = () => {
             outline: 0,
           }}
         />
-        <Icon name="search" size={24}/>
+        <Icon name="search" className="text-lg"/>
       </div>
       {/* Display filtered results */}
       <ul style={{ listStyleType: "none", padding: 0 }}>

@@ -25,7 +25,7 @@ const SocialIcons = () => {
           aria-label={item.name}
           className="text-gray-400 hover:text-white transition duration-300 hover:scale-110"
         >
-          <Icon name={item.name} size={18} />
+          <Icon name={item.name} className="text-lg" />
         </a>
       ))}
     </div>
