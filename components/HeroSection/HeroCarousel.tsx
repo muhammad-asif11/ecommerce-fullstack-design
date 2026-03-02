@@ -11,7 +11,7 @@ const HeroCarousel = () => {
   return (
     <div className="w-full bg-black text-white rounded-md px-4 sm:px-6 lg:px-10 py-8">
       <Swiper
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         spaceBetween={20}
         slidesPerView={1}
         loop
