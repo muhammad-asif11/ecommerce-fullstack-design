@@ -34,7 +34,7 @@ export type IconName = keyof typeof ICONS;
 
 export const NavigateURL = [
   {
-    idL: 1,
+    id: 1,
     title: "Home",
     link: "/",
   },

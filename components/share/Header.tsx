@@ -13,14 +13,14 @@ const Header = () => {
     <div className="flex justify-between place-items-center px-10 py-5 border-2 border-b-[#F5F5F5]">
       <Logo />
       <nav className="flex gap-10">
-        {NavigateURL.map((item) => {
+        {NavigateURL.map((item, index) => {
           //   const isActive = pathname === item.link;
           const isActive = pathname.startsWith(item.link);
 
           return (
             <Link
               href={item.link}
-              key={item.id}
+              key={index}
               className={`pb-1 border-b-2 border-shadoWhite transition-all ${
                 isActive
                   ? "border-black text-black"
